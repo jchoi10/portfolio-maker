@@ -11,7 +11,7 @@ const promptUser = () => {
       validate: nameInput => {
         if (nameInput) {
           return true;
-        } else {
+        } else { 
           console.log('Please enter your name!');
           return false;
         }
@@ -137,4 +137,3 @@ promptUser()
       console.log('Page created! Check out index.html in this directory to see it!');
     });
   });
-  console.log();
