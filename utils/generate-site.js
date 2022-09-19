@@ -26,7 +26,7 @@ const copyFile = fileContent => {
               reject(err);
               return;
             }
-            
+
             resolve({
                 ok: true,
                 message: 'Style sheet copied successfully!'
@@ -34,3 +34,9 @@ const copyFile = fileContent => {
         });
     });
 };
+
+// module.exports = {
+//     writeFile: writeFile,
+//     copyFile: copyFile
+// };
+module.exports = { writeFile, copyFile };
